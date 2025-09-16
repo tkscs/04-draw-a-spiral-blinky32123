@@ -26,7 +26,18 @@ The turtle starts at position(0, 0) with heading 0 degrees.
 
 ### YOUR CODE STARTS HERE
 
-
+x=3
+y=1
+turtle.speed(10)
+for i in range(10000):
+    turtle.forward(x)
+    turtle.right(3*(phi**(y/90)))
+    if y==1000000000:
+        x=x*phi
+    #for  i in range(100):
+     #   turtle.forward(0.001)
+     #   turtle.right(1)
+    y=y-1
 ### YOUR CODE ENDS HERE
 
 turtle.exitonclick()
